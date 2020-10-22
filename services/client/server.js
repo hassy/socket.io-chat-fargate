@@ -280,7 +280,7 @@ io.on('connection', function(socket) {
     });
   });
 
-  socket.on('anonymous user', function(callback) {
+  socket.on('anonymous user', function(data, callback) {
     if (!_.isFunction(callback)) {
       return;
     }
