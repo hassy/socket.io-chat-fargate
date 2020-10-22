@@ -105,7 +105,7 @@ io.on('connection', function(socket) {
   });
 
   // Client wants a list of rooms
-  socket.on('room list', function(callback) {
+  socket.on('room list', function(data, callback) {
     if (!_.isFunction(callback)) {
       return;
     }
